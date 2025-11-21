@@ -1,6 +1,8 @@
-# Pong - Love2D Game
+# Love2D luasteam Integration Example
 
-A simple two-player Pong game built with Love2D (LÖVE).
+A demonstration project showing how to integrate luasteam (SteamWorks bindings for Lua) with Love2D projects. This example uses a simple Pong game to showcase various Steam features including achievements, statistics, and rich presence.
+
+**Note**: This is primarily an example project. Other games wanting to use luasteam can copy the contents of the `luasteam` directory and adapt the integration patterns shown here.
 
 ## Requirements
 
@@ -23,39 +25,31 @@ A simple two-player Pong game built with Love2D (LÖVE).
 - Run from terminal: `love .` (from the project directory)
 - Or drag the folder onto the Love2D application
 
-## Controls
+## About This Example
 
-- **Player 1 (Left Paddle)**: 
-  - `W` - Move up
-  - `S` - Move down
+This project serves as a practical example of integrating luasteam into a Love2D game. The Pong game demonstrates:
 
-- **Player 2 (Right Paddle)**:
-  - `↑` (Up Arrow) - Move up
-  - `↓` (Down Arrow) - Move down
+- Proper luasteam library loading and initialization
+- Cross-platform library support (Windows 32/64-bit, Linux 32/64-bit, macOS)
+- Achievement unlocking based on game events
+- Statistics tracking and updates
+- Rich presence status updates
+- Graceful fallback when Steam is unavailable
 
-- **Game Controls**:
-  - `Space` - Pause/Unpause
-  - `Escape` - Quit game
+## Using luasteam in Your Own Project
 
-## Gameplay
+To use luasteam in your own Love2D project:
 
-- The ball bounces between two paddles
-- Score points by getting the ball past your opponent's paddle
-- The ball gains spin based on where it hits the paddle
-- First player to score wins (no score limit - play as long as you want!)
+1. Copy the entire `luasteam/` directory from this project
+2. Study `steam_integration.lua` for integration patterns
+3. Adapt the code to your game's needs
+4. Configure your achievements and stats in the Steamworks dashboard
 
-## Features
-
-- Two-player local gameplay
-- Score tracking
-- Paddle physics with spin effect
-- Pause functionality
-- Simple, clean graphics
-- Steam integration support (luasteam with cross-platform library loading)
+For detailed luasteam documentation, see:
+- **Official Documentation**: https://luasteam.readthedocs.io
+- **Local Documentation**: `luasteam/AGENTS.md`
 
 ## Steam Integration
-
-This project includes full Steam integration with achievements, statistics, and rich presence!
 
 ### Features
 
@@ -75,8 +69,9 @@ The game works perfectly fine without Steam - all Steam features are optional!
 
 ### Documentation
 
-- **`STEAM_INTEGRATION.md`** - Complete Steam integration guide
-- **`luasteam/README.md`** - luasteam library documentation
+- **`AGENTS.md`** - Complete project documentation and Steam integration guide
+- **`luasteam/AGENTS.md`** - luasteam library documentation
+- **`luasteam/README.md`** - luasteam platform setup guide
 
 The library automatically detects:
 - **Windows**: 32-bit or 64-bit
