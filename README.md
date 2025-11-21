@@ -60,10 +60,9 @@ For detailed luasteam documentation, see:
 
 ### Quick Start
 
-1. **Download Steamworks SDK** from [Steamworks Partner](https://partner.steamgames.com/)
-2. **Copy Steam API library** to your project root (see `STEAM_INTEGRATION.md`)
-3. **Create `steam_appid.txt`** with your Steam App ID
-4. **Configure achievements and stats** in Steamworks dashboard (see `STEAM_INTEGRATION.md`)
+1. **Copy `luasteam` library** to your project
+2. **Create `steam_appid.txt`** with your Steam App ID
+3. **Configure achievements and stats** in Steamworks dashboard
 
 The game works perfectly fine without Steam - all Steam features are optional!
 
